@@ -30,23 +30,30 @@
             justify-content: center;
             gap: 20px;
         }
-        nav a {
-            display: block;
-            text-decoration: none;
-            color: #333;
-            transition: transform 0.3s;
-        }
-        nav a:hover {
-            transform: scale(1.05);
-        }
-        nav img {
-            max-width: 300px;
-            width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto 5px;
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            background: #fff;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+            text-decoration: none;
+            color: #333;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 200px; /* Fixed height for images */
+            object-fit: cover; /* Ensures images fill the space */
+            display: block;
+        }
+        .card span {
+            padding: 10px;
+            font-size: 1.1em;
         }
         footer {
             margin-top: 30px;
@@ -61,8 +68,11 @@
         }
         /* Responsive Design */
         @media (max-width: 600px) {
-            nav img {
-                max-width: 200px;
+            .card {
+                width: 200px;
+            }
+            .card img {
+                height: 150px;
             }
             img.logo {
                 max-width: 150px;
@@ -75,17 +85,17 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Feastogether_Corporation_logo.svg" alt="饗賓集團 Logo" class="logo">
     </header>
     <nav>
-        <a href="./about-ajoy.html">
+        <a href="./about-ajoy.html" class="card">
             <img src="https://i.marieclaire.com.tw/assets/mc/202307/64AFAA6F0B2B21689234031.jpeg" alt="饗AJOY" loading="lazy">
-            饗AJOY
+            <span>饗AJOY</span>
         </a>
-        <a href="./about-paradise.html">
+        <a href="./about-paradise.html" class="card">
             <img src="https://www.eatogether.com.tw/storage/website/menu/20250303154033_IMG.jpeg" alt="饗食天堂" loading="lazy">
-            饗食天堂
+            <span>饗食天堂</span>
         </a>
-        <a href="./about-vegi.html">
+        <a href="./about-vegi.html" class="card">
             <img src="https://img.taiking.tw/245D711E9BEC3BB4536BF4B9DB59744CB4302BCBD9A6C43E509A6753F2B1F004" alt="果然匯" loading="lazy">
-            果然匯
+            <span>果然匯</span>
         </a>
     </nav>
     <footer>
