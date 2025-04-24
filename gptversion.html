@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>114年泰山職訓局-20號招募網</title>
+    <style>
+        /* 表格樣式 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 2px solid #333;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #004999;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        /* 預設的選項文字提示 */
+        option[disabled] {
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th colspan="2">
+                <h1>114年泰山職訓局-20號招募網</h1>
+                <p>招募期間：2025/04/23~2025/09/25</p>
+            </th>
+        </tr>
+        <tr>
+            <th colspan="2">
+                <img src="https://media.nownews.com/nn_media/thumbnail/2022/10/1666150315684-7cf650b2a4ce489da4ff835a9c6fe6f3-800x436.jpg?unShow=false"
+                    alt="泰山職訓局招募LOGO" style="width: 100%; height: auto; object-fit: cover;">
+            </th>
+        </tr>
+        <tr>
+            <th><label for="name">姓名</label></th>
+            <td><input type="text" name="name" id="name" required></td>
+        </tr>
+        <tr>
+            <th><label for="email">電子信箱</label></th>
+            <td><input type="email" name="email" id="email" required></td>
+        </tr>
+        <tr>
+            <th><label for="gender">性別</label></th>
+            <td>
+                <select name="gender" id="gender" required>
+                    <option value="" disabled selected>請選擇性別</option>
+                    <option value="male">男</option>
+                    <option value="female">女</option>
+                    <option value="nottale">不願提供</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th><label for="birthday">出生年月日</label></th>
+            <td><input type="date" id="birthday" name="birthday" required></td>
+        </tr>
+        <tr>
+            <th><label>應徵職缺</label></th>
+            <td>
+                <input type="radio" name="position" id="position_a" value="engineer" required>
+                <label for="position_a">工程師</label>
+                <input type="radio" name="position" id="position_b" value="designer">
+                <label for="position_b">設計師</label>
+                <input type="radio" name="position" id="position_c" value="position_c">
+                <label for="position_c">C職缺</label>
+                <input type="radio" name="position" id="position_d" value="position_d">
+                <label for="position_d">D職缺</label>
+            </td>
+        </tr>
+        <tr>
+            <th><label for="officeskill">OFFICE技能熟悉程度</label></th>
+            <td>
+                <input type="radio" name="officeskill" id="office_0" value="0">
+                <label for="office_0">0</label>
+                <input type="radio" name="officeskill" id="office_1" value="1">
+                <label for="office_1">1</label>
+                <input type="radio" name="officeskill" id="office_2" value="2">
+                <label for="office_2">2</label>
+                <input type="radio" name="officeskill" id="office_3" value="3">
+                <label for="office_3">3</label>
+                <input type="radio" name="officeskill" id="office_4" value="4">
+                <label for="office_4">4</label>
+                <input type="radio" name="officeskill" id="office_5" value="5">
+                <label for="office_5">5</label>
+            </td>
+        </tr>
+        <tr>
+            <th><label for="adobeskillrate">ADOBE技能熟悉程度</label></th>
+            <td>
+                <input type="radio" name="adobeskillrate" id="adobe_0" value="0">
+                <label for="adobe_0">0</label>
+                <input type="radio" name="adobeskillrate" id="adobe_1" value="1">
+                <label for="adobe_1">1</label>
+                <input type="radio" name="adobeskillrate" id="adobe_2" value="2">
+                <label for="adobe_2">2</label>
+                <input type="radio" name="adobeskillrate" id="adobe_3" value="3">
+                <label for="adobe_3">3</label>
+                <input type="radio" name="adobeskillrate" id="adobe_4" value="4">
+                <label for="adobe_4">4</label>
+                <input type="radio" name="adobeskillrate" id="adobe_5" value="5">
+                <label for="adobe_5">5</label>
+            </td>
+        </tr>
+        <tr>
+            <th><label for="wantmoney">期望薪資</label></th>
+            <td>
+                <select name="wantmoney" id="wantmoney" required>
+                    <option value="" disabled selected>請選擇期望薪資</option>
+                    <option value="wm35">3~5萬</option>
+                    <option value="wm58">5~8萬</option>
+                    <option value="wm810">8~10萬</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <button type="submit">送出表單</button>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

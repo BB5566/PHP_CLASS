@@ -5,35 +5,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>114年泰山職訓局-20號招募網</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: bisque;
+            margin: auto;
+        }
+
+        tr,
+        th,
+        td {
+            border: 2px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
 </head>
 
 <body>
-
-
-    <table style="width: 100%;">
+    <table>
         <tr>
-            <th colspan="4">
+            <th colspan="6" ; style="text-align: center;">
+                <H1>114年泰山職訓局-20號招募網</H1>
                 <p>招募期間：2025/04/23~2025/09/25</p>
             </th>
-        <tr>
-            <th colspan="4">
-                <img src="https://media.nownews.com/nn_media/thumbnail/2022/10/1666150315684-7cf650b2a4ce489da4ff835a9c6fe6f3-800x436.jpg?unShow=false" alt="">
-            </th>
         </tr>
         <tr>
-            <th colspan="2">
-                <H1>114年泰山職訓局-20號招募網</H1>
+            <th colspan="6" style="height: 400px;">
+                <img src="https://media.nownews.com/nn_media/thumbnail/2022/10/1666150315684-7cf650b2a4ce489da4ff835a9c6fe6f3-800x436.jpg?unShow=false"
+                    alt="泰山職訓局招募LOGO" style="width: 100%; height: 100%; object-fit: cover;">
             </th>
         </tr>
         <tr>
             <th>
-                <label for="name">姓名：</label>
+                <label for="name">姓名</label>
+            </th>
+            <th>
+                <input type="text" name="name" id="name" style="width: 100%;"><br>
+            </th>
+            <th><label for="email">電子信箱</label></th>
+            <th><input type="email" name="email" id="email" style="width: 100%;"></th>
+            <td rowspan="4">
+                <label for="gender">性別</label>
+            </td>
+            <td rowspan="4">
+                <select name="gender" id="gender" style="width: 100%;">
+                    <option value="" disabled selected>請選擇性別</option>
+                    <option value="male">男</option>
+                    <option value="female">女</option>
+                    <option value="nottale">不願提供</option>
+                </select>
+                </th>
+        </tr>
+        <tr>
+            <th><label for="birthday">出生年月日</label></th>
+            <th><input type="date" id="birthday" name="birthday" style="width: 100%;"></th>
+            <th>應徵職缺：</th>
+            <th>
+                <input type="radio" name="position" id="position_a">
+                <label for="position_a">工程師</label>
+
+                <input type="radio" name="position" id="position_b">
+                <label for="position_b">設計師</label>
+
+                <input type="radio" name="position" id="position_c">
+                <label for="position_c">C職缺</label>
+
+                <input type="radio" name="position" id="position_d">
+                <label for="position_d">D職缺</label>
             </th>
         </tr>
         <tr>
-            <th>
-                <input type="text" name="name" id="name">
+            <th>OFFICE技能熟悉程度：</th>
+            <th><input type="radio" name="officeskill" id="officeskill" value="0">
+                <label for="office_0">0</label>
+                <input type="radio" name="officeskill" id="officeskill" value="1">
+                <label for="office_1">1</label>
+                <input type="radio" name="officeskill" id="officeskill" value="2">
+                <label for="office_2">2</label>
+                <input type="radio" name="officeskill" id="officeskill" value="3">
+                <label for="office_3">3</label>
+                <input type="radio" name="officeskill" id="officeskill" value="4">
+                <label for="office_4">4</label>
+                <input type="radio" name="officeskill" id="officeskill" value="5">
+                <label for="office_5">5</label>
             </th>
+            <th>ADOBE技能熟悉程度：</th>
+            <th><input type="radio" name="adobeskillrate" id="adobeskillrate" value="0">
+                <label for="adobe_0">0</label>
+                <input type="radio" name="adobeskillrate" id="adobeskillrate" value="1">
+                <label for="adobe_1">1</label>
+                <input type="radio" name="adobeskillrate" id="adobeskillrate" value="2">
+                <label for="adobe_2">2</label>
+                <input type="radio" name="adobeskillrate" id="adobeskillrate" value="3">
+                <label for="adobe_3">3</label>
+                <input type="radio" name="adobeskillrate" id="adobeskillrate" value="4">
+                <label for="adobe_4">4</label>
+                <input type="radio" name="adobeskillrate" id="adobeskillrate" value="5">
+                <label for="adobe_5">5</label>
+            </th>
+        </tr>
+        <tr>
+            <th>XXX技能熟悉程度：</th>
+            <th><input type="radio" name="XXXskillrate" id="XXXskillrate" value="0">
+                <label for="xxxskill_0">0</label>
+                <input type="radio" name="XXXskillrate" id="XXXskillrate" value="1">
+                <label for="xxxskill_1">1</label>
+                <input type="radio" name="XXXskillrate" id="XXXskillrate" value="2">
+                <label for="xxxskill_2">2</label>
+                <input type="radio" name="XXXskillrate" id="XXXskillrate" value="3">
+                <label for="xxxskill_3">3</label>
+                <input type="radio" name="XXXskillrate" id="XXXskillrate" value="4">
+                <label for="xxxskill_4">4</label>
+                <input type="radio" name="XXXskillrate" id="XXXskillrate" value="5">
+                <label for="xxxskill_5">5</label>
+            </th>
+            <th>OOO技能熟悉程度：</th>
+            <th><input type="radio" name="OOOskillrate" id="OOOskillrate" value="0">
+                <label for="OOOskill_0">0</label>
+                <input type="radio" name="OOOskillrate" id="OOOskillrate" value="1">
+                <label for="OOOskill_1">1</label>
+                <input type="radio" name="OOOskillrate" id="OOOskillrate" value="2">
+                <label for="OOOskill_2">2</label>
+                <input type="radio" name="OOOskillrate" id="OOOskillrate" value="3">
+                <label for="OOOskill_3">3</label>
+                <input type="radio" name="OOOskillrate" id="OOOskillrate" value="4">
+                <label for="OOOskill_4">4</label>
+                <input type="radio" name="OOOskillrate" id="OOOskillrate" value="5">
+                <label for="OOOskill_5">5</label>
+            </th>
+        </tr>
+        <tr>
+            <th><label for="wantmoney">期望薪資</label></th>
+            <th colspan="5"> <select name="wantmoney" id="wantmoney" style="width: 100%;">
+                    <option value="" disabled selected>請選擇期望薪資</option>
+                    <option value="wm35">3~5萬</option>
+                    <option value="wm58">5~8萬</option>
+                    <option value="wm58">8~10萬</option>
+                </select></th>
+        </tr>
+        <tr>
+            <td colspan="6"><textarea name="otherinfo" id="otherinfo" placeholder="想跟我們說的話" rows="5" style="width: 100%;"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="6" style="text-align: center;">
+                <button type="submit">送出表單</button>
+            </td>
         </tr>
     </table>
 </body>
