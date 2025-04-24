@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>饗賓集團餐飲品牌</title>
+    <style>
+        body {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), 
+                              url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvZnJob2FsdXUwMDAwOS1pbWFnZS1rd3Z5azAzby5qcGc.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        img.logo {
+            max-width: 200px;
+            margin: 0 auto 20px;
+            display: block;
+            animation: pulse 2s infinite ease-in-out;
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.3s;
+        }
+        nav a:hover {
+            transform: scale(1.05);
+        }
+        nav img {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 5px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        /* SVG Animation */
+        @keyframes pulse {
+            0% { transform: scale(1) rotate(0deg); }
+            50% { transform: scale(1.1) rotate(5deg); }
+            100% { transform: scale(1) rotate(0deg); }
+        }
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            nav img {
+                max-width: 200px;
+            }
+            img.logo {
+                max-width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Feastogether_Corporation_logo.svg" alt="饗賓集團 Logo" class="logo">
+    </header>
+    <nav>
+        <a href="./about-ajoy.html">
+            <img src="https://i.marieclaire.com.tw/assets/mc/202307/64AFAA6F0B2B21689234031.jpeg" alt="饗AJOY" loading="lazy">
+            饗AJOY
+        </a>
+        <a href="./about-paradise.html">
+            <img src="https://www.eatogether.com.tw/storage/website/menu/20250303154033_IMG.jpeg" alt="饗食天堂" loading="lazy">
+            饗食天堂
+        </a>
+        <a href="./about-vegi.html">
+            <img src="https://img.taiking.tw/245D711E9BEC3BB4536BF4B9DB59744CB4302BCBD9A6C43E509A6753F2B1F004" alt="果然匯" loading="lazy">
+            果然匯
+        </a>
+    </nav>
+    <footer>
+        <p>此網站僅為學術練習用途，未用於商業或營利目的。所有圖片版權歸饗賓集團所有。</p>
+    </footer>
+</body>
+</html>
